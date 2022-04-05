@@ -4,17 +4,14 @@ GitHub repository 瀏覽網站
 ## 開啟方式：
 1. 直接前往線上環境 https://repos-brower-app.herokuapp.com/
 2. clone repository後，移動至 repo資料夾內，依序執行
-```
-npm install
-```
+>npm install
 
-```
-npm start
-```
+>npm star
 
 ## 程式架構
 目錄結構
->├─node_modules
+```
+├─node_modules
 ├─public
 └─src
     ├─components
@@ -32,7 +29,7 @@ npm start
         ├─style.css
     ├─App.js
     └─index.js
-
+```
 
 #### Homepage
 網站首頁，包含
