@@ -17,7 +17,7 @@ GitHub repository 瀏覽網站
     ├─components
         ├─Footer.js
         ├─Nav.js
-        ├─Popular.js
+        ├─Populars.js
         ├─RepoDetail.js
         ├─RepoIntro.js
         └─Search.js
@@ -33,16 +33,17 @@ GitHub repository 瀏覽網站
 
 #### Homepage
 網站首頁，包含
-<Search/> 提供查詢功能，輸入 GitHub 用戶名稱後將會跳轉至瀏覽頁面
-<Populars/> 提供熱門的 GitHub 用戶或 Repositories，點擊後會跳轉至瀏覽頁面
+&lt; Search /&gt; 提供查詢功能，輸入 GitHub 用戶名稱後將會跳轉至瀏覽頁面  
+&lt; Populars /&gt; 提供熱門的 GitHub 用戶或 Repositories，點擊後會跳轉至瀏覽頁面
 
 #### UserPage
 瀏覽單一使用者的 repositories 頁面  
 進入頁面時發送一次 API 請求 ( GET /users/{username}/repos )，獲得的 repos data 以直排分布  
-每個 repo 皆以 <RepoIntro/> 處理樣式，顯示內容包含基本資訊、內部連結(於網站內瀏覽)、以及外部連結(前往 GitHub)  
-滑鼠滾至底部時，再發出下一筆 API 請求提供其他 repos 資料，每次至多 10 筆，當沒有更多資料可以獲取時，會停止發送 API 請求  
+每個 repo 皆以 &lt; RepoIntro /&gt; 處理樣式，顯示內容包含基本資訊、內部連結(於網站內瀏覽)、以及外部連結(前往 GitHub)  
+滑鼠滾至底部時，再發出下一筆 API 請求提供其他 repos 資料，每次至多 10 筆  
+當沒有更多資料可以獲取時，會停止發送 API 請求  
 
 #### RepoPage
 瀏覽單一 repository 頁面  
-進入頁面時發送 API 請求 ( GET /repos/{owner}/{repo} )，獲得的 repo data 傳入 <RepoDetail/> 處理樣式  
+進入頁面時發送 API 請求 ( GET /repos/{owner}/{repo} )，獲得的 repo data 傳入 &lt; RepoDetail /&gt; 處理樣式  
 顯示內容包含基本資訊、內部連結以及外部連結，如果 repo 擁有 topics 或 homepage 的話會顯示其外部連結
