@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { request } from "@octokit/request";
 import RepoDetail from "../components/RepoDetail";
-import { GITHUB_AUTH } from "../global/constant";
 
 const RepoPage = () => {
   const params = useParams();

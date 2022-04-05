@@ -1,6 +1,4 @@
 import React from "react";
-
-import Grid from "@mui/material/Grid";
 import Search from "../components/Search";
 import Populars from "../components/Populars";
 

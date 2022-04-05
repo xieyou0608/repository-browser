@@ -3,7 +3,6 @@ import { useParams } from "react-router-dom";
 import { request } from "@octokit/request";
 import RepoIntro from "../components/RepoIntro";
 import { v4 } from "uuid";
-import { GITHUB_AUTH } from "../global/constant";
 
 const UserPage = () => {
   const params = useParams();

@@ -1,7 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Grid from "@mui/material/Grid";
-import Box from "@mui/material/Box";
 const Populars = () => {
   return (
     <Grid
