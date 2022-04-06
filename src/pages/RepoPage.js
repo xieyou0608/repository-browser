@@ -12,9 +12,9 @@ const RepoPage = () => {
   const getRepoDetail = async () => {
     try {
       const res = await request("GET /repos/{owner}/{repo}", {
-        // headers: {
-        //   authorization: GITHUB_AUTH,
-        // },
+        headers: {
+          authorization: process.env.REACT_APP_API_AUTH,
+        },
         owner: userName,
         repo: repoName,
       });

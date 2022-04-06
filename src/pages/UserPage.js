@@ -21,9 +21,9 @@ const UserPage = () => {
   const getUserRepos = async () => {
     try {
       const res = await request("GET /users/{username}/repos", {
-        // headers: {
-        //   authorization: GITHUB_AUTH,
-        // },
+        headers: {
+          authorization: process.env.REACT_APP_API_AUTH,
+        },
         username: userName,
         per_page: 10,
         page: curPage,
